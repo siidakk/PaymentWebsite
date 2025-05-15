@@ -43,6 +43,7 @@ jobs:
       with:
         personal_token: ${{ secrets.PAT_TOKEN }}
         publish_dir: ./sidak_new/dist
+        enable_jekyll: false
         
   notify-success:
     runs-on: ubuntu-latest
