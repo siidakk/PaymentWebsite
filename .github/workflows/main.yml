@@ -31,7 +31,7 @@ jobs:
       working-directory: ./sidak_new
 
     - name: List build output
-      run: ls -R ./sidak_new/dist
+      run: ls -R ./sidak_new
   deploy:
     runs-on: ubuntu-latest
     needs: build
