@@ -44,6 +44,7 @@ jobs:
         personal_token: ${{ secrets.PAT_TOKEN }}
         publish_dir: ./sidak_new/dist
         enable_jekyll: false
+        publish_branch: gh-pages 
         
   notify-success:
     runs-on: ubuntu-latest
