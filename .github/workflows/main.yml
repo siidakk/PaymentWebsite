@@ -1,7 +1,7 @@
 name: Deploy React App to GitHub Pages
 
 on:
-  workflow_dispatch:  # Manual trigger
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -18,12 +18,14 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+      working-directory: ./sidak_new
 
     - name: Build React app
       run: npm run build
+      working-directory: ./sidak_new
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+        publish_dir: ./sidak_new/dist
