@@ -4,7 +4,7 @@ import './App.css';
 import { Home } from './components/Home';
 import { Login } from './components/Login';
 import { Registration } from './components/Registration';
-import { Dashboard } from "./components/dashboard";
+import { Dashboard } from "./components/Dashboard";
 import {PaymentDashboard} from "./components/Paymentdashboard"
 import {ContactUs} from "./components/contactus"
 import {CustomerCare} from "./components/customercare"
